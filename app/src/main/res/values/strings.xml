@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">BackgroundServices</string>
+
+    <string name="notification_stop_action_text">Stop</string>
+    <string name="notification_text_title">My Test Appl is running</string>
+    <string name="notification_text_content">Click to open this application</string>
+
+    <string name="notification_text_action">Action</string>
+    <string name="notification_text_status">Status text</string>
+    <string name="notification_received">Notification send this: </string>
+
+    <string name="word_yes">Yes</string>
+    <string name="word_no">No</string>
+    <string name="network_settings">Network settings</string>
+
+    <string name="local_service_connected">Local service connected</string>
+    <string name="local_service_disconnected">Local service disconnected</string>
+
+    <string name="marketing_message">
+        Keep your screen\non while charging
+    </string>
+
+    <string name="introduction_title">
+        Introduction
+    </string>
+
+
+
+</resources>
