@@ -29,7 +29,8 @@
             android:label="Splashscreen"
             android:windowActionBar="false"
             android:launchMode="singleTask"
-            android:theme="@style/Splashscreen">
+            android:supportsRtl="true"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -64,6 +65,7 @@
 
     </application>
     <!--
+    android:theme="@style/Splashscreen"
     android:process=":externalProcess"
     -->
 

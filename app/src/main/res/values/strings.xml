@@ -9,6 +9,7 @@
     <string name="notification_text_status">Status text</string>
     <string name="notification_received">Notification send this: </string>
 
+    <string name="word_ok">OK</string>
     <string name="word_yes">Yes</string>
     <string name="word_no">No</string>
     <string name="network_settings">Network settings</string>
@@ -24,6 +25,8 @@
         Introduction
     </string>
 
+    <string name="permission_storage_rationale">Access to the storage is needed</string>
+    <string name="no_storage_permission">This application cannot run because it does not have the storage permission. The application will now exit.</string>
 
 
 </resources>
