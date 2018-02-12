@@ -14,6 +14,9 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import butterknife.BindView;
@@ -22,15 +25,18 @@ import rx.backgroundservices.MainActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
-    public static final int SplashTime = 100;
+    public static final int SplashTime = 1000;
     Thread splashTread;
+    Animation anim;
 
-    private static final String TAG = "SEARCH_API";
+    private static final String TAG = SplashActivity.class.getName();
     Bundle _savedInstanceState;
     private static final int RC_HANDLE_PERM = 255;
 
     @BindView(R.id.tv_output)
     TextView tvOutput;
+    @BindView(R.id.iv_logo)
+    ImageView ivLogo;
 
 
     @Override
@@ -39,6 +45,26 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         ButterKnife.bind(this);
+
+        anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_in); //creating animation
+        anim.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
+        ivLogo.startAnimation(anim);
+
 
         splashTread = new Thread() {
             @Override
